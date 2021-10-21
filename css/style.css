@@ -1,0 +1,898 @@
+/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* MOBILE - HEADER STYLING PLUS BUTTONS */
+.desktop-menu {
+  display: none;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../images/bgmobile.jpg");
+  background-position-y: -45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100vh;
+  margin: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > .phone {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fd7f7a;
+}
+
+.instagram-icon img {
+  vertical-align: middle;
+  margin: 0 16px;
+}
+
+.line {
+  height: 3px;
+  width: 24px;
+  background: #fd7f7a;
+}
+
+.line-middle {
+  margin: 5px 0;
+}
+
+.showcase-title {
+  text-align: right;
+}
+
+.showcase-title .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #1f609c;
+  line-height: 0.8;
+}
+
+.showcase-title .name {
+  color: #fd7f7a;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.tagline .tagline-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #1f609c;
+  text-align: right;
+}
+
+.buttons {
+  align-self: center;
+}
+
+.buttons .booknow {
+  width: 150px;
+  height: 30px;
+  background-color: #fd7f7a;
+  border-radius: 30px;
+  margin: 16px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttons .booknow h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.buttons .mywork {
+  text-align: center;
+  color: #1f609c;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  /* margin-top: 100px; */
+}
+
+.buttons .mywork a {
+  text-decoration: none;
+  color: #1f609c;
+}
+
+header .arrow {
+  display: block;
+  width: 20px;
+  height: 10px;
+  margin: 16px auto;
+}
+
+/* MOBILE - SERVICES PAGE STYLING */
+#services {
+  /* height: 100vh; */
+  background-color: #fd7f7a;
+  padding: 16px;
+}
+
+#services h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5);
+  margin-top: 16px;
+}
+
+#services .services-container .card {
+  background-color: red;
+  background-image: url("../images/rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 20px 20px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 16px;
+  margin: 24px 0;
+}
+
+.card h3 {
+  text-align: center;
+  color: #1f609c;
+  line-height: 2.5;
+}
+
+.manicure-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.manicure-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.manicure-content p {
+  color: #333;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.manicure-content a {
+  text-decoration: none;
+  color: #1f609c;
+  font-size: 12px;
+}
+
+.manicure-image img {
+  width: 120px;
+  height: 120px;
+}
+
+/* INSTAGRAM SECTION STYLING */
+.instagram-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#instagram h2 {
+  color: #1f609c;
+  text-align: center;
+  line-height: 3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(36, 36, 36, 0.5);
+}
+#instagram img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 16px 0;
+}
+
+#instagram h3 {
+  color: #1f609c;
+  font-weight: 200;
+  text-align: center;
+  padding: 16px 0;
+}
+
+/* OFFER SECTION STYLING */
+.week-offer {
+  text-align: center;
+  background: #f7c4c8;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.week-offer h2 {
+  color: #38444f;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.week-offer div {
+  margin-top: 24px;
+}
+
+.week-offer h3 {
+  color: #38444f;
+  font-size: 1em;
+}
+
+.week-offer h3 span {
+  font-size: 1.5em;
+}
+
+.week-offer p {
+  font-weight: 200;
+  margin-top: 24px;
+}
+
+.week-offer .booknow {
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 16px auto;
+  box-shadow: 5px 5px 6px -3px rgba(0, 0, 0, 0.28);
+}
+
+.week-offer .booknow h2 {
+  color: #866e6f;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.5;
+}
+
+/* MEET OUR EXPERT SECTION STYLING */
+#expert {
+  color: #1f609c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#expert h2 {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(36, 36, 36, 0.5);
+  margin: 24px 0;
+  font-size: 1.8rem;
+}
+
+#expert h3 {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 8px 0 0 0;
+}
+
+#expert .technician {
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #1f609c;
+}
+
+#expert h4 {
+  padding: 8px 0 16px;
+  font-weight: 300;
+}
+
+#expert img {
+  width: 264px;
+}
+
+.expert-text p {
+  display: none;
+}
+
+/* WHY CHOOSE US STYLING */
+.chooseus {
+  color: #fff;
+  background: #fd7f7a;
+}
+
+.chooseus h2 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5);
+  text-align: center;
+  padding: 24px 0 16px 0;
+}
+
+.chooseus .chooseus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chooseus .chooseus-container div {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.chooseus .chooseus-container div h3 {
+  font-weight: 400;
+}
+
+.chooseus .chooseus-container div img {
+  width: 45px;
+  height: 45px;
+  fill: #fff;
+}
+
+.chooseus .chooseus-container div:nth-child(2) {
+  border-bottom: 1px solid #38444f;
+  border-top: 1px solid #38444f;
+}
+
+/* TESTIMONIALS STYLING */
+#testimonials {
+  background: #1f609c;
+  color: #fff;
+}
+
+#testimonials h2 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  padding: 24px 0;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5);
+}
+
+.testimonials-card img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+}
+
+.person {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.person .person-text h4,
+.person .person-text h5 {
+  padding-left: 24px;
+}
+
+.testimonials-card p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding-top: 16px;
+  line-height: 1.6;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.dots .dot {
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+/* FIND US SECTION STYLING */
+#findus h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #1f609c;
+  text-shadow: 2px 2px 3px rgba(36, 36, 36, 0.5);
+  padding: 24px 0;
+}
+
+#findus iframe {
+  width: 100%;
+}
+
+/* FOOTER STYLING */
+.footer {
+  background: #38444f;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.footer .address h4 {
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.footer .address {
+  text-align: center;
+  color: #38444f;
+  font-size: 0.9em;
+}
+
+.footer .menu li {
+  list-style-type: none;
+  padding-bottom: 7px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer .some {
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer .some .some-div .fab {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.footer .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .some div a {
+  color: #fff;
+}
+
+/* ===================  MEDIA QUERIES ======================= */
+
+@media only screen and (min-width: 560px) {
+  /* ANIMATION BACKGROUND */
+
+  header {
+    max-width: 1366px;
+    margin: 0 auto;
+    background-image: url("../images/bgwide.jpg");
+  }
+
+  .header-container {
+    margin-top: 32px;
+  }
+
+  .header-container nav .desktop-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-container nav .desktop-menu li {
+    list-style-type: none;
+    color: #fd7f7a;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 2.5rem;
+  }
+
+  .header-container nav .desktop-menu li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fd7f7a;
+  }
+
+  .header-container nav .desktop-menu li a:hover,
+  .header-container nav .desktop-menu li a:visited {
+    border-bottom: 1px solid #fd7f7a;
+  }
+
+  .header-container nav .desktop-menu li .booknow {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fd7f7a;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background-color: #fd7f7a;
+  }
+
+  .header-container nav .desktop-menu li .booknow:hover {
+    color: #fd7f7a;
+    background-color: #fff;
+  }
+
+  .bounce-top {
+    -webkit-animation: bounce-top 0.9s both;
+    animation: bounce-top 2s both;
+  }
+
+  .header-container {
+    margin-right: 100px;
+    justify-content: space-between;
+  }
+
+  header nav .phone {
+    display: none;
+  }
+
+  .instagram-icon,
+  .hamburger-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+  }
+
+  .showcase-title {
+    margin: 0 0 20px;
+    justify-content: center;
+  }
+
+  .showcase-title .title {
+    font-size: 13rem;
+  }
+
+  .showcase-title .name {
+    font-size: 2.8rem;
+  }
+
+  .tagline {
+    margin-top: -150px;
+  }
+
+  .tagline .tagline-div {
+    display: inline-block;
+    background: #1f609c;
+    width: 10px;
+    height: 16px;
+    margin: 10px 10px 0 0;
+  }
+
+  .tagline .tagline-text {
+    display: inline;
+    font-weight: 100;
+    font-size: 1.6rem;
+  }
+
+  .tagline .tagline-text span {
+    font-weight: 500;
+  }
+
+  .buttons {
+    align-self: flex-end;
+    /* margin-top: -200px; */
+  }
+
+  .buttons .booknow {
+    display: none;
+  }
+
+  .buttons .mywork {
+    margin-top: -100px;
+    text-align: center;
+    color: #1f609c;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+  }
+
+  .buttons .mywork a {
+    text-decoration: none;
+    color: #fd7f7a;
+    border: 1px solid #fd7f7a;
+    border-radius: 30px;
+    padding: 10px 30px;
+  }
+
+  header .arrow {
+    display: none;
+  }
+
+  /* SERVICES STYLING */
+  #services h2 {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px 0;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  #services .services-container .card {
+    margin: 24px 0;
+    width: 30%;
+  }
+
+  .manicure-content p {
+    font-size: 0.8rem;
+  }
+
+  /* INSTAGRAM STYLING */
+  .instagram-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  #instagram img {
+    width: 30%;
+    height: 400px;
+    /* padding: 0 16px; */
+  }
+
+  #instagram h3 {
+    margin-bottom: 16px;
+  }
+
+  #instagram h3 a {
+    color: #1f609c;
+    text-decoration: none;
+  }
+
+  /* OFFER STYLING */
+  .offer {
+    background: url("../images/offer.jpg");
+    background-size: cover;
+    height: 600px;
+  }
+
+  .week-offer {
+    width: 50%;
+    background: #f9cccf;
+    height: 100%;
+  }
+
+  .week-offer h1 {
+    font-size: 2.5em;
+  }
+
+  .week-offer h2 {
+    font-size: 2.8em;
+  }
+
+  .week-offer h3 {
+    font-size: 1.5em;
+  }
+
+  .week-offer h3 span {
+    font-size: 2em;
+    color: #fff;
+  }
+
+  .week-offer p {
+    margin-top: 16px;
+  }
+
+  /* MEET ELENA STYLING */
+  #expert {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  #expert h1 {
+    padding: 32px 0;
+  }
+
+  .expert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .expert-text {
+    width: 50%;
+    margin-left: 5%;
+  }
+
+  .expert-text p {
+    display: block;
+  }
+
+  #expert .technician {
+    border: none;
+  }
+
+  /* CHOOSE US STYLING */
+  .chooseus {
+    padding-bottom: 32px;
+  }
+
+  .chooseus-container {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  .chooseus .chooseus-container div:nth-child(2) {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+  }
+
+  /* TESTIMONIALS STYLING */
+  .testimonials h1 {
+    padding: 32px 0;
+  }
+
+  .testimonials-card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .person {
+    width: 30%;
+  }
+
+  .person-text h4 {
+    font-size: 2rem;
+  }
+
+  .testimonials-card p {
+    width: 30%;
+    font-size: 1.1rem;
+    padding-top: 32px;
+  }
+
+  /* FIND US STYLING */
+  #findus h1 {
+    font-size: 2rem;
+  }
+
+  #findus iframe {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  /* FOOTER STYLING */
+  footer {
+    background-color: #38444f;
+  }
+
+  .footer {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2020-11-19 14:3:1
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+  /**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+  @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+      transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+      transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+}
+
+/* KEYFRAMES */
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,765 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* MOBILE - HEADER STYLING PLUS BUTTONS */
+header {
+  height: 100vh;
+}
+
+#header-showcase {
+  height: 75vh;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position-x: -120px;
+}
+
+nav {
+  display: flex;
+  width: 60%;
+  margin: 32px 32px 32px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .desktop-menu {
+  display: none;
+}
+
+nav > .phone {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fd7f7a;
+}
+
+.instagram-icon img {
+  vertical-align: middle;
+}
+
+.line {
+  height: 3px;
+  width: 32px;
+  background: #fd7f7a;
+}
+
+.line-middle {
+  margin: 6px 0;
+}
+
+.showcase {
+  /* background-color: lightgray; */
+  color: #1f609c;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: end;
+  margin: 56px 32px;
+}
+
+.showcase .showcase-title .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.showcase .showcase-title .name {
+  color: #fd7f7a;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-top: -30px;
+}
+
+.showcase .tagline .tagline-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.buttons .booknow {
+  bottom: 1vh;
+  width: 200px;
+  height: 50px;
+  background-color: #fd7f7a;
+  border-radius: 30px;
+  margin: 16px auto;
+  box-shadow: 5px 5px 6px -3px rgba(0, 0, 0, 0.28);
+}
+
+.buttons .booknow h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.buttons .mywork {
+  text-align: center;
+  color: #1f609c;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  margin: 24px 0;
+}
+
+.buttons .mywork a {
+  text-decoration: none;
+  color: #1f609c;
+}
+
+header .arrow {
+  display: block;
+  margin: 0 auto;
+}
+
+/* MOBILE - SERVICES PAGE STYLING */
+#services {
+  height: 100vh;
+  background-color: #fd7f7a;
+}
+
+#services h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 32px 0;
+  text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5);
+}
+
+.services-container {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#services .services-container .card {
+  width: 90%;
+  max-width: 315px;
+  height: 30%;
+  background-image: url("../images/rectangle.jpg");
+  background-position-x: center;
+  background-size: cover;
+  border-radius: 0 20px 20px 20px;
+  box-shadow: 10px 10px 8px -3px rgba(0, 0, 0, 0.28);
+}
+
+.card h3 {
+  text-align: center;
+  color: #1f609c;
+  line-height: 2.5;
+}
+
+.manicure-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.manicure-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 32px;
+}
+
+.manicure-content p {
+  color: #333;
+  font-size: 12px;
+  text-align: left;
+}
+
+.manicure-content a {
+  text-decoration: none;
+  color: #1f609c;
+  font-size: 12px;
+}
+
+.manicure-image img {
+  width: 120px;
+  height: 120px;
+}
+
+/* INSTAGRAM SECTION STYLING */
+.instagram-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#instagram h1 {
+  color: #1f609c;
+  text-align: center;
+  line-height: 3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(36, 36, 36, 0.5);
+}
+#instagram img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 16px 0;
+}
+
+#instagram h3 {
+  color: #1f609c;
+  font-weight: 200;
+  text-align: center;
+  padding: 16px 0;
+}
+
+/* OFFER SECTION STYLING */
+.week-offer {
+  text-align: center;
+  background: #f7c4c8;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.week-offer h2 {
+  color: #38444f;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.week-offer div {
+  margin-top: 24px;
+}
+
+.week-offer h1 {
+  color: #38444f;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.week-offer h3 {
+  color: #38444f;
+  font-size: 1em;
+}
+
+.week-offer h3 span {
+  font-size: 1.5em;
+}
+
+.week-offer p {
+  font-weight: 200;
+  margin-top: 24px;
+}
+
+.week-offer .booknow {
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 16px auto;
+  box-shadow: 5px 5px 6px -3px rgba(0, 0, 0, 0.28);
+}
+
+.week-offer .booknow h2 {
+  color: #866e6f;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.5;
+}
+
+/* MEET OUR EXPERT SECTION STYLING */
+#expert {
+  color: #1f609c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#expert h1 {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(36, 36, 36, 0.5);
+  margin: 24px 0;
+}
+
+#expert h3 {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 8px 0 0 0;
+}
+
+#expert .technician {
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #1f609c;
+}
+
+#expert h4 {
+  padding: 8px 0 16px;
+  font-weight: 300;
+}
+
+#expert img {
+  width: 264px;
+}
+
+.expert-text p {
+  display: none;
+}
+
+/* WHY CHOOSE US STYLING */
+.chooseus {
+  color: #fff;
+  background: #fd7f7a;
+}
+
+.chooseus h1 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5);
+  text-align: center;
+  padding: 24px 0 16px 0;
+}
+
+.chooseus .chooseus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chooseus .chooseus-container div {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.chooseus .chooseus-container div h3 {
+  font-weight: 400;
+}
+
+.chooseus .chooseus-container div img {
+  width: 45px;
+  height: 45px;
+  fill: #fff;
+}
+
+.chooseus .chooseus-container div:nth-child(2) {
+  border-bottom: 1px solid #38444f;
+  border-top: 1px solid #38444f;
+}
+
+/* TESTIMONIALS STYLING */
+#testimonials {
+  background: #1f609c;
+  color: #fff;
+}
+
+#testimonials h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  padding: 24px 0;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5);
+}
+
+.testimonials-card img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+}
+
+.person {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.person .person-text h4,
+.person .person-text h5 {
+  padding-left: 24px;
+}
+
+.testimonials-card p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding-top: 16px;
+  line-height: 1.6;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.dots .dot {
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+/* FIND US SECTION STYLING */
+#findus h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #1f609c;
+  text-shadow: 2px 2px 3px rgba(36, 36, 36, 0.5);
+  padding: 24px 0;
+}
+
+#findus iframe {
+  width: 100%;
+}
+
+/* FOOTER STYLING */
+.footer {
+  background: #38444f;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.footer .address h4 {
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.footer .address {
+  text-align: center;
+  color: #38444f;
+  font-size: 0.9em;
+}
+
+.footer .menu li {
+  list-style-type: none;
+  padding-bottom: 7px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer .some {
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer .some .some-div .fab {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.footer .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .some div a {
+  color: #fff;
+}
+
+/* ===================  MEDIA QUERIES ======================= */
+
+@media only screen and (min-width: 501px) {
+  #header-showcase {
+    max-width: 1366px;
+    margin: 0 10%;
+    background-image: url("../images/bgwide.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -75px;
+  }
+
+  header nav .phone {
+    display: none;
+  }
+
+  .instagram-icon,
+  .hamburger-menu {
+    display: none;
+  }
+
+  header nav .desktop-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav .desktop-menu li {
+    list-style-type: none;
+    color: #fd7f7a;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  header nav .desktop-menu li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fd7f7a;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background-color: #fd7f7a;
+  }
+
+  #header-showcase .showcase {
+    margin: 0;
+  }
+
+  .showcase .showcase-title .title {
+    font-size: 10rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-top: 100px;
+    margin-right: 24px;
+  }
+
+  .showcase .showcase-title .name {
+    margin-right: 26px;
+    font-size: 2.8rem;
+  }
+
+  .showcase .tagline {
+    margin: 50px 24px 0 0;
+  }
+
+  .showcase .tagline .tagline-text {
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .showcase .tagline .tagline-text span {
+    font-weight: bold;
+  }
+
+  .buttons {
+    max-width: 1366px;
+    margin: 0 10%;
+    margin-top: -100px;
+    text-align: right;
+  }
+
+  .buttons .booknow {
+    display: none;
+  }
+
+  .buttons .mywork {
+    margin: 50px 24px 0 0;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #fd7f7a;
+  }
+
+  .buttons .mywork h2 {
+    padding-top: 12px;
+    font-size: 1.2rem;
+    color: #fd7f7a;
+  }
+
+  header .arrow {
+    display: none;
+  }
+
+  /* SERVICES STYLING */
+
+  #services {
+    height: 45vh;
+  }
+
+  #services h1 {
+    padding: 32px 0 10px 0;
+    font-size: 1.6rem;
+    color: #1f609c;
+  }
+
+  #services .services-container .card {
+    height: 60%;
+  }
+
+  .services-container {
+    height: 300px;
+    max-width: 75%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .manicure-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* INSTAGRAM STYLING */
+  .instagram-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #instagram img {
+    width: 30%;
+  }
+
+  /* OFFER STYLING */
+  .offer {
+    background: url("../images/offer.jpg");
+    background-size: cover;
+    height: 600px;
+  }
+
+  .week-offer {
+    width: 50%;
+    background: #f9cccf;
+    height: 100%;
+  }
+
+  .week-offer h2 {
+    font-size: 2.5em;
+  }
+
+  .week-offer h1 {
+    font-size: 2.8em;
+  }
+
+  .week-offer h3 {
+    font-size: 1.5em;
+  }
+
+  .week-offer h3 span {
+    font-size: 2em;
+    color: #fff;
+  }
+
+  .week-offer p {
+    margin-top: 16px;
+  }
+
+  /* MEET ELENA STYLING */
+  #expert {
+    align-items: flex-start;
+    height: 600px;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  #expert h1 {
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+
+  .expert-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .expert-text h3 {
+    font-size: 2em;
+  }
+
+  #expert img {
+    width: 300px;
+    margin: 5% 0 5% 10%;
+  }
+
+  .expert-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10%;
+  }
+
+  .expert-text p {
+    display: block;
+  }
+
+  #expert .technician {
+    border: none;
+  }
+
+  .chooseus {
+    padding-bottom: 32px;
+  }
+
+  /* TESTIMONIALS STYLING */
+  .testimonials h1 {
+    font-size: 1.8em;
+    padding: 32px 0;
+  }
+
+  .testimonials-card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .person {
+    width: 30%;
+  }
+
+  .person-text h4 {
+    font-size: 2rem;
+  }
+
+  .testimonials-card p {
+    width: 30%;
+    font-size: 1.1rem;
+    padding-top: 32px;
+  }
+
+  /* FIND US STYLING */
+  #findus h1 {
+    font-size: 2rem;
+  }
+
+  #findus iframe {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  /* FOOTER STYLING */
+  footer {
+    background-color: #38444f;
+  }
+
+  .footer {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
